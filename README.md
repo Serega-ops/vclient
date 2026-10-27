@@ -11,5 +11,5 @@
     -p, --port     порт (по умолчанию 33333)
     -i, --input    файл исходных данных (обязательный)
     -o, --output   файл результатов (обязательный)
-    -c, --config   файл LOGIN:PASSWORD (по умолчанию ~/.config/vclient.conf)
+    -c, --config   файл ЛОГИН:user ПАРОЛЬ:P@ssW0rd (по умолчанию ~/.config/vclient.conf)
     -h, --help     справка
