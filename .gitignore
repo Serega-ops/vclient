@@ -3,3 +3,6 @@ build/
 *.bin
 *.log
 Doxyfile.bak
+server_static
+*.bin
+*.log
