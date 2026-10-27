@@ -1,5 +1,4 @@
 # vclient — сетевой клиент (курсовая, ТиМП, ПГУ)
-
 ## Сборка
     sudo apt install libboost-all-dev libcrypto++-dev cmake g++
     cmake -B build && cmake --build build
