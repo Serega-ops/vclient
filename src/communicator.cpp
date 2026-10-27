@@ -55,8 +55,7 @@ std::string Communicator::recvText() {
 }
 
 void Communicator::sendU32(uint32_t v) {
-    uint32_t n = htonl(v);
-    chk((int)::send(sock, &n, sizeof n, 0), "send(u32)");
+    chk((int)::send(sock, &v, sizeof v, 0), "send(u32)");
 }
 
 uint32_t Communicator::recvU32() {
@@ -64,7 +63,7 @@ uint32_t Communicator::recvU32() {
     ssize_t rc = ::recv(sock, &n, sizeof n, 0);
     chk((int)rc, "recv(u32)");
     if (rc != sizeof n) throw NetworkError("recv(u32): short read");
-    return ntohl(n);
+    return n;
 }
 
 void Communicator::sendDoubles(const std::vector<double>& v) {
